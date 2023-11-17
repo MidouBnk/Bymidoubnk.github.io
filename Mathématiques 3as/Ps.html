@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mot de passe</title>
+    <link rel="stylesheet" href="Ps.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+ 
+  <div class="wrapper">
+    <label for="toggle">
+		<a href="../Home.html">
+			<i class="cancel-icon fas fa-times"></i>
+		</a>
+    </label>
+    <div class="icon">
+      <i class="uil uil-lock fa-beat-fade password" style="color: #000000;"></i>
+    </div>
+    <div class="content">
+      <header>Mot de passe</header>
+    </div>
+    <form>
+      <div class="field">
+        <input type="password" id="password"  placeholder="Entrer le mot de passe" required >
+      </div>
+      <div class="field btn">
+        <div class="layer"></div>
+        <button type="button" onclick="authenticate()">Subscribe</button>
+      </div>
+    </form>
+	<script src="Ps.js"></script>
+    <div class="text"></div>
+  </div>
+
+</body>
+</html>
