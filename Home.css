@@ -47,7 +47,10 @@ div{
 }
 
 /*html2*/
-
+.fa-solid {
+  margin-top: 50px;
+  margin-left: 150px;
+}
 #html2{
     display: flex;
     justify-content: space-around;

@@ -3,7 +3,7 @@ function authenticate() {
     var correctPassword = 'ma23th!'; 
 
     if (enteredPassword === correctPassword) {
-        window.location.href = 'Home.html';
+        window.location.href = 'MT_2AS_C.html';
     } else {
         window.location.href = 'Ps.html';
     }
