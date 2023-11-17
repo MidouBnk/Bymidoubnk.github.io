@@ -37,6 +37,9 @@ div{
 }
 
 /*html_C2*/
+.text_Cour .fa-sharp{
+  margin-top: 5px;
+}
 li{
     list-style: none;
 }
