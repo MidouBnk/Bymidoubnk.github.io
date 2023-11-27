@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: block;
+}
+/*html1*/
+/*html1_C1*/
+
+#html1{
+    background:rgb(15, 5, 110);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+#html1 .text_C2 i {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+#html1 .text_C2  {
+    font-size: 22px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+#html1 .html_C1 .image_C1{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-top: 15px;
+}  
+.image_C1 img {
+    width: 100%;
+    height: auto;
+}
+
+#html1 .html_C1 .text_C1 {
+    text-align: center;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
+
+/*html2*/
+
+#html2 .text_h2_C2{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'Kanit', sans-serif;
+}
+#html2 .Cours_C2{
+    margin: 20px;
+    background: rgba(128, 128, 128, 0.164);
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+}
+#html2 .Cours_C2 .Cour{
+    margin: 10px;
+}
+#html2 .Cours_C2 .Cour  h2{
+    font-family: 'Instrument Serif', serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#html2 .Cours_C2 .Cour .text_Cour div{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: 900;
+    font-family: 'Kanit', sans-serif;
+}
+#html2 .Cours_C2 .Cour .pdf_Cour{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+}
+#html2 .Cours_C2 .Cour .pdf_Cour a{
+    display: flex;
+    justify-content: left;
+    gap:15px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: rgb(3, 1, 124);
+}
+#html2 .Cours_C2 .Cour .pdf_Cour a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+#html2 .Cours_C2 .Cour .pdf_Cour i{
+    margin-top: 17px;
+}
+#html2 .Cours_C2 .Cour .pdf_Cour p{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Pacifico', cursive;
+}
