@@ -53,6 +53,22 @@ div{
     border-radius: 10%;
 }
 
+.no-overflow {
+    color: rgb(0, 0, 0);
+    line-height: 24px;
+    background: rgba(184, 224, 224, 0.712);
+    padding: 10px 20px;
+    border: 1px solid rgba(61, 61, 133, 0.63);
+    border-radius: 10px;
+    margin-bottom: 25px;
+	font-family: 'Kanit', sans-serif;
+}
+.no-overflow1 {
+    color: rgb(0, 0, 0);
+    line-height: 24px;
+	font-family: 'Kanit', sans-serif;
+}
+
 .text_Cour .fa-sharp{
 	font-size: 20px;
   }
