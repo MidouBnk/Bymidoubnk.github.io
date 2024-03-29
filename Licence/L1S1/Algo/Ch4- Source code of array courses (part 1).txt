@@ -1,0 +1,70 @@
+#include <stdio.h>
+
+int main() {
+
+    // d?claration
+  const int n = 6;
+  //int tab[n];
+  int tab[]={2,6,1,7,3,9};
+
+  //Read the elements of the table
+  puts("please enter the elemnts:");
+  for(int i=0;i<n;i++)
+    {
+        scanf("%d", &tab[i]);
+    }
+
+   //Display the content of the table
+  for(int i=0;i<n;i++)
+    printf("%d\t", tab[i]);
+
+    //min and min index
+    int min =tab[0];int indMin=0;
+    for(int i=0;i<n;i++)
+    {
+        if(tab[i]<min)
+        {
+            min=tab[i];
+            indMin=i;
+        }
+    }
+
+    //max and max index
+    int max =tab[0];int indMax=0;
+    for(int i=0;i<n;i++)
+    {
+        if(tab[i]>max)
+        {
+            max=tab[i];
+            indMax=i;
+        }
+    }
+    printf("\n");
+    printf("min val=%d,min ind=%d\n",min,indMin);
+    printf("max val=%d,max ind=%d\n",max,indMax);
+
+    // Sum of table elements
+    int sum=0;
+    for(int i=0;i<n;i++)
+        sum+=tab[i];
+
+    // Prod of table elements
+    int prod=1;
+    for(int i=0;i<n;i++)
+        prod*=tab[i];
+
+    printf("sum=%d,prod=%d\n",sum,prod);
+
+    // Linear search
+    int r=10,rind=-1;
+    for(int i=0;i<n;i++)
+    {
+        if(r==tab[i])
+           rind=i;
+    }
+    if(rind!=-1)
+        printf("elt exists in :%d",rind);
+    else printf("the elt doesnt exist");
+
+    return 0;
+}
