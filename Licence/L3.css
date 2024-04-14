@@ -47,6 +47,11 @@ div{
 }
 
 /*html2*/
+.pdf_Cour .fa-file-powerpoint{
+	font-size: 30px;
+	margin-bottom: -10px ;
+  }
+  
 #html2 .text_h2_C2 img{
     width: 200px;
     height: 150px;
