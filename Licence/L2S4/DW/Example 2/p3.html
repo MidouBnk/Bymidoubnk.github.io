@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P3</title>
+    <style>
+        .con-cont{
+            background-color: aliceblue;
+            display: flex;
+            justify-content: right;
+            height: 50px;
+        }
+        span{
+            padding: 20px 10px;
+            color: #0083e9;
+        }
+        span:hover{
+            cursor: pointer;
+        }
+        .rec{
+            background-color: #fff5fb;
+            padding: 5px;
+            margin: 10px;
+            position: absolute;
+            right:0px;
+            width: 200px;
+            height: 220px;
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 5px;
+            border: solid 1px #b60064;
+            box-shadow: 0px 5px 10px #b600644d;        
+        }
+        .in1{
+            border: solid #b60064 1px;
+            border-radius: 5px;
+            padding: 5px 10px;
+            width: 80%;
+        }
+        .bt1{
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            width: 80%;
+            background-color: #b60064;
+            color: white;
+            cursor: pointer;
+        }
+        h3{
+            color: #b60064;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="con-cont">
+        <img src="images/im3.png" alt=""> <span id="s1">▾</span>
+    </div>
+    <div class="rec-cont">
+        <form class="rec" id="d1" action="" method="post">
+            <h3>Login</h3>
+            <input type="text" placeholder="Username" class="in1">
+            <input type="password" placeholder="Password" class="in1">
+            <input type="submit" value="Submit" class="bt1">
+            <a href="p1.html">Registration page ...</a>
+        </form>
+    </div>
+</body>
+<script>
+    var logBtn = document.getElementById("s1");
+    var logBox = document.getElementById("d1");
+
+    function f1(event){
+        event.stopPropagation();
+        display = logBox.style.display;
+        if(display == "none")
+            logBox.style.display = "flex"
+        else 
+            logBox.style.display = "none";
+    }
+    function f2(event){
+        if (!logBox.contains(event.target)) {
+            logBox.style.display = "none";
+        }
+    }
+
+    logBtn.addEventListener("click", f1);
+    document.addEventListener("click", f2); 
+</script>
+</html>

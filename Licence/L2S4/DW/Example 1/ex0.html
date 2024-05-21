@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            .boxes{
+                margin-left: 30%;
+                margin-right: 30%;
+            }
+            .user-box{
+                display: flex;
+                justify-content: space-between;
+                border: solid orange 1px;
+                border-radius: 8px;
+                padding: 0px 20px;
+                margin: 20px;
+            }
+            span{
+                font-weight: bold;
+            }
+            .filter{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        
+            <div class='boxes'>
+                <div class='filter'><input type='checkbox' id="cb"> Only Mobilis phone number</div>
+                <div class='user-box'>
+                    <div>
+                        <p class='tel'><span>phone:</span> 0666445523</p>
+                        <p id='mail'><span>email:</span> name@email.com</p>
+                    </div>
+                    <p id='adr'><span>adress:</span> my adress here</p>
+                </div>
+                <div class='user-box'>
+                    <div>
+                        <p class='tel'><span>phone:</span> 0773019923</p>
+                        <p id='mail'><span>email:</span> name@email.com</p>
+                    </div>
+                    <p id='adr'><span>adress:</span> my adress here</p>
+                </div>
+                <div class='user-box'>
+                    <div>
+                        <p class='tel'><span>phone:</span> 0600238211</p>
+                        <p id='mail'><span>email:</span> name@email.com</p>
+                    </div>
+                    <p id='adr'><span>adress:</span> my adress here</p>
+                </div>
+            </div>
+    </body>
+    <script>
+        function filter(){
+            let tels = document.getElementsByClassName("tel");
+            let act = document.getElementById("cb").checked;
+            for (const tel of tels) {
+                let s = tel.firstChild.nextSibling.textContent;
+                if(act){
+                    if (!s.match(/06\d+/))
+                        tel.parentElement.parentElement.style.display = "none";
+                }
+                else tel.parentElement.parentElement.style.display = "flex";
+            }
+        }
+        document.getElementById("cb").addEventListener("change",filter);
+    </script>
+</html>
