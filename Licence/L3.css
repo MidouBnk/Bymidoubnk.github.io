@@ -129,6 +129,7 @@ div{
     text-decoration: none;
     color: rgb(3, 1, 124);
 }
+
 #html2 .Cours_C2 .Cour .pdf_Cour a:hover{
   opacity: 1;
   text-decoration: underline;
@@ -153,6 +154,14 @@ div{
     margin: 20px;
     gap: 20px;
 }
+
+#html2 .Cours_C2 .Cour .pdf_Cour2{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+}
 #html2 .Cours_C2 .Cour .pdf_Cour1 a{
     display: flex;
     justify-content: left;
@@ -161,6 +170,20 @@ div{
     text-decoration: none;
     color: rgb(3, 1, 124);
 }
+#html2 .Cours_C2 .Cour .pdf_Cour2 a{
+    display: flex;
+    justify-content: left;
+    gap:15px;
+    margin-left: 2px;
+    text-decoration: none;
+    color: rgb(3, 1, 124);
+}
+
+#html2 .Cours_C2 .Cour .pdf_Cour2 a:hover{
+    opacity: 1;
+    text-decoration: underline;
+  }
+  
 #html2 .Cours_C2 .Cour .pdf_Cour1 p{
     font-size: 16px;
     font-weight: 800;
@@ -168,4 +191,16 @@ div{
 }
 #html2 .Cours_C2 .Cour .pdf_Cour1 i {
     font-size: 30px;
+}
+
+#html2 .Cours_C2 .Cour .pdf_Cour2 p{
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Pacifico', cursive;
+}
+
+#html2 .Cours_C2 .Cour .pdf_Cour2 i{
+    margin-top: 15px;
+    font-size: 25px;
+
 }
